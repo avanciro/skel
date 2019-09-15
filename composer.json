@@ -13,6 +13,9 @@
     "require": {
         "php": ">=7.0"
     },
+    "config": {
+        "vendor-dir": "libs"
+    },
     "license": "MIT",
     "homepage": "https://avanciro.com"
 }
