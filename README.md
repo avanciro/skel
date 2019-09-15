@@ -1,2 +1,2 @@
-# skel
+# Skel
 Lightweight PHP Framework
