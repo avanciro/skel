@@ -1,4 +1,5 @@
 <?php
+
 namespace Avanciro\Skel\Core;
 
 use Avanciro\Skel\Core\Route;
@@ -9,8 +10,9 @@ use Avanciro\Skel\Core\Route;
  * new request. This will include
  */
 class App {
-    function dispatch() {
-        echo "Avanciro\Skel\Core\App\App::dispatch()";
+    public function dispatch() {
+        $Route = new Route;
+        $Route->dispatch();
     }
 }
 
