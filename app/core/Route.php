@@ -12,9 +12,11 @@ use Symfony\Component\Routing\Exception\ResourceNotFoundException as Symfony_Res
 
 class Route {
 
+    protected $Registry= null;
     protected $RouteCollection = null;
 
-    public function __construct() {
+    public function __construct($Registry) {
+        $this->Registry = $Registry;
         $this->RouteCollection = new Symfony_RouteCollection();
     }
 
@@ -39,7 +41,7 @@ class Route {
             $Symfony_UrlMatcher = new Symfony_UrlMatcher($this->RouteCollection, $Symfony_RequestContext);
             $parameters = $Symfony_UrlMatcher->match($Symfony_RequestContext->getPathInfo());
 
-            // LOAD CONTROLLER
+            $this->Registry->load->controller($parameters['_controller'], $parameters['_method']);
 
         } catch (Symfony_ResourceNotFoundException $error) {
             echo $error->getMessage();
