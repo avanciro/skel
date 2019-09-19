@@ -18,10 +18,10 @@ class Loader {
          * We have to check if we got valid set of parameters
          * before passing them into the Controller class
          */
-        if ( is_array($params) ):
-            call_user_func_array( array(new $controller, 'index'), $params);
+        if ( is_array($params) AND !empty($params) ):
+            call_user_func_array( array(new $controller, $method), $params);
         else:
-            call_user_func( array(new $controller, 'index'));
+            call_user_func( array(new $controller, $method));
         endif;
     }
 
