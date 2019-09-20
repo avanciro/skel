@@ -2,6 +2,7 @@
 
 namespace Avanciro\Skel\Core;
 
+use Avanciro\Skel\Core\Registry;
 use Symfony\Component\Routing\Route as Symfony_Route;
 use Symfony\Component\HttpFoundation\Request as Symfony_Request;
 use Symfony\Component\Routing\RequestContext as Symfony_RequestContext;
@@ -15,7 +16,7 @@ class Route {
     protected $Registry= null;
     protected $RouteCollection = null;
 
-    public function __construct($Registry) {
+    public function __construct(Registry $Registry) {
         $this->Registry = $Registry;
         $this->RouteCollection = new Symfony_RouteCollection();
     }
