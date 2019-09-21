@@ -24,7 +24,6 @@ class Loader {
      *    - call to method of controller with parameters
      */
     public function controller($controller, $method, $params = null) {
-        include_once dirname(__DIR__).'/Helpers/Model.php';
         require_once dirname(dirname(__DIR__)).'/controllers/'.explode("_", $controller)[0].'.php';
 
         /**
