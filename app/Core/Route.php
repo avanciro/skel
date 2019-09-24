@@ -13,7 +13,7 @@ use Symfony\Component\Routing\Exception\ResourceNotFoundException as Symfony_Res
 
 class Route {
 
-    protected $Registry= null;
+    protected $Registry = null;
     protected $RouteCollection = null;
 
     public function __construct(Registry $Registry) {
