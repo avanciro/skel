@@ -15,6 +15,7 @@ class App {
         // REGISTRY
         $Registry = new Registry;
 
+
         /**
          * We use loader mechanisam to load things into
          * the framework.
@@ -23,6 +24,7 @@ class App {
          */
         $Registry->set('load', new Loader($Registry));
 
+
         /**
          * We need to accesss configurations to use in
          * other components of the framework. So we first
@@ -30,10 +32,33 @@ class App {
          */
         $Registry->set('config', new Config($Registry));
 
-        // DATABASE ( Eloquent ORM )
+
+        /**
+         * Framework need to load Eloquent ORM to the
+         * system and also need to oot Eloquent in order
+         * to use in it models
+         */
         new Database($Registry);
 
-        // ROUTES
+
+        /**
+         * We need to intercept the request.
+         */
+        $Registry->set('request', new Request($Registry));
+
+
+        /**
+         * We nede to load Twig template engine into
+         * the play before start using it.
+         */
+        new Twig($Registry);
+
+
+        /**
+         * We can now dispatch the framework to the
+         * specified route because all the initialization
+         * is done by now.
+         */
         $Route = new Route($Registry);
         $Route->dispatch();
     }
