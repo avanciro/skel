@@ -7,7 +7,8 @@ class Kernel {
 
     protected $map = array(
         'route'         => 'Route',
-        'controller'    => 'Controller'
+        'controller'    => 'Controller',
+        'system'        => 'System'
     );
 
     public function __construct() {
