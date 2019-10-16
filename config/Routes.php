@@ -3,7 +3,7 @@
 use Avanciro\Skel\Core\Route;
 
 // ROUTES
-Route::get('home_route', '/', 'Home_Controller', 'index');
-Route::get('profile_route', '/profile/{id}', 'Home_Controller', 'profile', array('id' => '[0-9]+'));
+Route::get('/', 'Home_Controller', 'index');
+Route::get('/profile/{id}', 'Home_Controller', 'index', array('id' => '[0-9]+'));
 
 ?>

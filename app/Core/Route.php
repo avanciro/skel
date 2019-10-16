@@ -21,11 +21,11 @@ class Route {
         $this->RouteCollection = new Symfony_RouteCollection();
     }
 
-    public function get($name, $expression, $controller, $method, $param = null) {
+    public function get($expression, $controller, $method, $param = null) {
         if ( isset($param) AND is_array($param) ):
-            $this->RouteCollection->add($name, new Symfony_Route($expression, [ '_controller' => $controller, '_method' => $method ], $param) );
+            $this->RouteCollection->add("get_".$expression, new Symfony_Route($expression, [ '_controller' => $controller, '_method' => $method ], $param) );
         else:
-            $this->RouteCollection->add($name, new Symfony_Route($expression, [ '_controller' => $controller, '_method' => $method ]));
+            $this->RouteCollection->add("get_".$expression, new Symfony_Route($expression, [ '_controller' => $controller, '_method' => $method ]));
         endif;
     }
 
