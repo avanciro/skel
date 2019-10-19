@@ -21,7 +21,7 @@ class Route {
         $this->RouteCollection = new Symfony_RouteCollection();
     }
 
-    public function get($expression, $controller, $method, $param = null) {
+    public function add($expression, $controller, $method, $param = null) {
         if ( isset($param) AND is_array($param) ):
             $this->RouteCollection->add("get_".$expression, new Symfony_Route($expression, [ '_controller' => $controller, '_method' => $method ], $param) );
         else:
