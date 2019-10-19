@@ -12,7 +12,7 @@ return [
      *
      * @param Boolean
      */
-    'debug' => false,
+    'debug' => true,
 
 
     /**
