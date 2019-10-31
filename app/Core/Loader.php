@@ -84,7 +84,14 @@ class Loader {
         if ( file_exists(dirname(dirname(__DIR__)).'/'.$this->_registry->config->twig->directory.'/'.$view.'.twig') ):
             echo $this->_registry->twig->render($view.'.twig', $data);
         else:
+
+            /**
+             * It seems like application comes to a point that it
+             * can't locate twig file to load. We have to display
+             * friendly error for the end user
+             */
             throw new \Exception("Incorrect template file path.");
+
         endif;
     }
 }
