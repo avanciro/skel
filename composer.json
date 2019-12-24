@@ -17,6 +17,11 @@
         "illuminate/database": "^6.0",
         "twig/twig": "^2.11"
     },
+    "replace": {
+        "symfony/polyfill-ctype": "*",
+        "symfony/polyfill-mbstring": "*",
+        "symfony/polyfill-intl-idn": "*"
+    },
     "config": {
         "vendor-dir": "libs"
     },
