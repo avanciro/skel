@@ -44,34 +44,6 @@ class Loader {
 
 
     /**
-     * This method is responsible for loading Model
-     * classes into play. 
-     * 
-     * @param String $model
-     */
-    public function model($model) {
-
-        /**
-         * We need to explode the path data and capitalize
-         * the first letter.
-         */
-        $model = explode("/", $model);
-        $path['file'] = null;
-        foreach( $model as $key => $value ):
-            $model[$key] = ucfirst($value);
-            $path['file'] .= $model[$key].'/';
-        endforeach;
-
-        // GENERATE THINGS
-        $path['file'] = rtrim($path['file'], '/').".php";
-
-        // REQUIRE FILE
-        require_once dirname(dirname(__DIR__)).'/models/'.$path['file'];
-    }
-
-
-
-    /**
      * This method is responsile for loading twig
      * view. This function will require 2 params to
      * be passed
