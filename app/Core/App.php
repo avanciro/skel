@@ -42,6 +42,12 @@ class App {
 
 
         /**
+         * Initialize SESSION parameters to handle login kind
+         * of stuff
+         */
+        $Registry->set('session', new \Avanciro\Skel\Core\Session);
+
+        /**
          * We need to intercept the request.
          */
         $Registry->set('request', new Request($Registry));
