@@ -39,6 +39,18 @@ class Session {
 
 
     /**
+     * This method will remove the key, value pair from the
+     * session params.
+     */
+    public function forget($key) {
+        if ( $this->has($key) ):
+            unset($_SESSION[$key]);
+        endif;
+    }
+
+
+
+    /**
      * This method will check if the provided key
      * exists in the session
      */
