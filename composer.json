@@ -24,6 +24,7 @@
     },
     "autoload": {
         "psr-4": {
+            "Avanciro\\Skel\\Core\\": "app/Core",
             "App\\Model\\": "models/"
         }
     },
