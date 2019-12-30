@@ -5,7 +5,7 @@ language: php
 install:
   - composer install
 
-matrix:
+jobs:
   fast_finish: true
   include:
     - php: 7.2
