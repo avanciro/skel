@@ -1,0 +1,13 @@
+root = true
+
+[*.php]
+indent_style = tab
+indent_size = 4
+
+[*.twig]
+indent_style = tab
+indent_size = 4
+
+[{package.json,composer.json,.travis.yml}]
+indent_style = tab
+indent_size = 4
