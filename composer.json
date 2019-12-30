@@ -35,7 +35,10 @@
     "config": {
 		"vendor-dir": "libs",
 		"process-timeout": 0
-    },
+	},
+	"scripts": {
+		"test": [ "./libs/bin/phpunit" ]
+	},
     "license": "MIT",
     "homepage": "https://avanciro.com"
 }
