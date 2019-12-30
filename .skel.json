@@ -2,7 +2,7 @@
     "skel": {
         "version": "1.0.0-beta",
         "update": {
-            "mirror": "https://raw.githubusercontent.com/shyaminayesh/skel/prod/.skel.json"
+            "mirror": "https://raw.githubusercontent.com/shyaminayesh/skel/prod/"
         }
     },
     "files": {
