@@ -1,6 +1,6 @@
+os: linux
 dist: bionic
 language: php
-sudo: false
 
 install:
   - composer install
