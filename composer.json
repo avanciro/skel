@@ -18,7 +18,8 @@
         "twig/twig": "^2.11"
     },
     "require-dev": {
-        "phpunit/phpunit": "^8.5"
+        "phpunit/phpunit": "^8.5",
+        "symfony/console": "^5.0"
     },
     "replace": {
         "symfony/polyfill-ctype": "*",
@@ -27,6 +28,7 @@
     },
     "autoload": {
         "psr-4": {
+			"Avanciro\\Skel\\Console\\": "app/Console",
             "Avanciro\\Skel\\Core\\": "app/Core",
             "App\\Controller\\": "controllers/",
             "App\\Model\\": "models/"
@@ -34,7 +36,8 @@
     },
     "config": {
 		"vendor-dir": "libs",
-		"process-timeout": 0
+		"process-timeout": 0,
+		"optimize-autoloader": true
 	},
 	"scripts": {
 		"test": [ "./libs/bin/phpunit" ]

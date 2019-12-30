@@ -1,0 +1,20 @@
+{
+    "skel": {
+        "version": "1.0.0-beta",
+        "update": {
+            "mirror": "https://raw.githubusercontent.com/shyaminayesh/skel/prod/"
+        }
+    },
+    "files": {
+        "app/Core/App.php": "a8b53ad22c1b6a131301fe836a9f9d88b0b361a025fcada27ddf580b7deb825392416ba7778d821c345f725a40cfe3c4463ed4ffc4df53da444bcbdccc7d201e",
+        "app/Core/Config.php": "e1026e7650a7cabfcb305cf9d23a294bdac48d1683070b6b58a899dad775a8afa442b9b80a274f9abf65305864f48941cc6ab53d8072f169463515ccc7f429d1",
+        "app/Core/Controller.php": "f0f9e57cd5650a95a617f21651005877222d6408a0a764eea1b014e7021a0ecf3e932008d071f2ecaf11f56c6210638611d43e48a1ec99375f4907aff5055237",
+        "app/Core/Database.php": "9a6c24d211ba833458e187fab2e2f55bff8be67e6523d254cae0d6a0e0b5a89d420727a8c77f506c48e5cf47f3b88a041697261bc1940161354c0a399a816081",
+        "app/Core/Loader.php": "bf6d3c11b2ef7391ad72f8426a3b928e61c0b08677b0f86ca2136063a84db7ab484c7cbc99e6280c1dcf38959e0574398eba4e484134d4d6c9e3800b5799c453",
+        "app/Core/Registry.php": "863477d03c7727f6898e64f872b6a3e9e1a96ace7577bb92e25ed80cdc44167beea8fc7a7fced7322f5e02ceefc37b504020cfa2a5963978def8841dadc8db97",
+        "app/Core/Request.php": "c257763121897702a9aa7dc1f1748eec80a66852d721a89a24d0fb5c3af2937ba6c1421b30d630eb2b2d69777445cb036994da6c44b04721b8dbedd50c0cafdc",
+        "app/Core/Route.php": "67b3643919c4e49a893e86ab2c64759c90e2f4bc424bc7e599e5576d878cfd859cb728d41e628089df998005ffb2ca01a711ccd3288a198f23429c4749bfb033",
+        "app/Core/Session.php": "afb010f21dd3cea839a28ebbc2620b572b27d1fa914b5f411d8da2e27ab00299757224d9a399f2d001e5deb30f450b456d9e72ef07649d13ca3beecced53b53a",
+        "app/Core/Twig.php": "6bbb5d4a91ae3769dfd8afb4f19e0ffdf55b4510e85641ec36c16b1d15f20c2265e39a408e4bc4b011b0a655786af56d6b1b18a76bcc3c404dcb6ca70ae71238"
+    }
+}
