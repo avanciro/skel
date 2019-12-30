@@ -1,10 +1,10 @@
 dist: bionic
 language: php
+sudo: false
 
 matrix:
-	fast_finish: true
-	include:
-		- php: 7.2
+  fast_finish: true
+  include:
 
 script:
-	- libs/bin/phpunit
+  - libs/bin/phpunit
