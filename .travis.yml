@@ -2,6 +2,9 @@ dist: bionic
 language: php
 sudo: false
 
+install:
+  - composer install
+
 matrix:
   fast_finish: true
   include:
