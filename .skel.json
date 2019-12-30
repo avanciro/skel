@@ -1,0 +1,20 @@
+{
+    "skel": {
+        "version": "1.0.0-beta",
+        "update": {
+            "mirror": "https://raw.githubusercontent.com/shyaminayesh/skel/prod/.skel.json"
+        }
+    },
+    "files": {
+        "app/Core/App.php": "e4aa54641c7f49b7d0a53b9e5f5b330f8115ca892969b68aa5660016ae446266",
+        "app/Core/Config.php": "1465e3a2b09f619280ee8d3a74378274e80adce54bb4d7e6162cbd77e939a2eb",
+        "app/Core/Controller.php": "8ecef4b6fe13ce2b6e89c0696742d7f9754298ec9b31019a7942d590bda9442f",
+        "app/Core/Database.php": "56565fbd7697a28ebd06360cadb86843f62926fa9062c2b409d02b5cdcd12266",
+        "app/Core/Loader.php": "95d8de7ed3f4523ff84c5ca373c3af0baa5ec3bcb27e2ea95a67c0f8927e851f",
+        "app/Core/Registry.php": "0f01fda3f56529b1279000988387274f4c3a1be29412f15d941399178e526fad",
+        "app/Core/Request.php": "801191b2c1804ba97e1c9c1dd985f890b87c45e16d6d2b88edd45c6ae19490c8",
+        "app/Core/Route.php": "e4b955d42780919db0ded36714ad6e95c8683c7e0cd232b832e6c07fb8649498",
+        "app/Core/Session.php": "469626eb21bc9e1c78e2981ee4074d6fa842835af6d2ec145211ee2d597a4bcc",
+        "app/Core/Twig.php": "43b841df4e9d9ea6a3beb718f25ff52d6eb2e3a8ffb46001e085fef7738f703b"
+    }
+}
