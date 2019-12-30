@@ -1,6 +1,9 @@
 #!/usr/bin/env php
 <?php
-require_once dirname(__FILE__).'/app/Console/Init.php';
-$Kernel = new Avanciro\Skel\Console\Kernel();
-$Kernel->dispatch($argv);
+require_once __DIR__."/libs/autoload.php";
+$Console = new Symfony\Component\Console\Application;
+$Console->run();
+// require_once dirname(__FILE__).'/app/Console/Init.php';
+// $Kernel = new Avanciro\Skel\Console\Kernel();
+// $Kernel->dispatch($argv);
 ?>
