@@ -28,7 +28,6 @@ class Loader {
      * @param Array $params
      */
     public function controller($controller, $method, Array $params = null) {
-        require_once dirname(dirname(__DIR__)).'/controllers/'.explode("_", $controller)[0].'.php';
 
         /**
          * We have to check if we got valid set of parameters
