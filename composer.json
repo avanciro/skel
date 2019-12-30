@@ -35,7 +35,8 @@
     },
     "config": {
 		"vendor-dir": "libs",
-		"process-timeout": 0
+		"process-timeout": 0,
+		"optimize-autoloader": true
 	},
 	"scripts": {
 		"test": [ "./libs/bin/phpunit" ]
