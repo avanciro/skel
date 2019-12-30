@@ -30,7 +30,8 @@
         }
     },
     "config": {
-        "vendor-dir": "libs"
+		"vendor-dir": "libs",
+		"process-timeout": 0
     },
     "license": "MIT",
     "homepage": "https://avanciro.com"
