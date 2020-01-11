@@ -5,24 +5,25 @@ use Avanciro\Skel\Core\Registry;
 
 class Request {
 
-    // PROPS
-    protected $_registry = null;
-    
-    public $get     = array();
-    public $post    = array();
-    public $files   = array();
-    public $server  = array();
+	public $_registry = array();
 
 
-    public function __construct(Registry $Registry) {
-        $this->_registry = $Registry;
+    public function __construct() {
+		$this->_registry['get']		= $_GET;
+        $this->_registry['post']	= $_POST;
+        $this->_registry['files']	= $_FILES;
+		$this->_registry['server']	= $_SERVER;
+	}
 
-        // REQUEST PARAMS
-        $this->get      = (Object)$_GET;
-        $this->post     = (Object)$_POST;
-        $this->files    = (Object)$_FILES;
-        $this->server   = (Object)$_SERVER;
-    }
+
+
+	public function __get($key) {
+		if ( array_key_exists($key, $this->_registry) ):
+			return $this->_registry[$key];
+		else:
+			return false;
+		endif;
+	}
 }
 
 ?>

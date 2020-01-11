@@ -50,7 +50,7 @@ class App {
         /**
          * We need to intercept the request.
          */
-        $Registry->set('request', new Request($Registry));
+        $Registry->set('request', new Request);
 
 
         /**
