@@ -6,9 +6,9 @@ $Console = new Symfony\Component\Console\Application;
 // COMMANDS
 $Console->add(new Avanciro\Skel\Console\Commands\Version);
 $Console->add(new Avanciro\Skel\Console\Commands\Update);
+$Console->add(new Avanciro\Skel\Console\Commands\Backup\Database);
 
 // RUN
 $Console->run();
-
 
 ?>
