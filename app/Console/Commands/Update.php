@@ -25,7 +25,7 @@ class Update extends SymfonyConsole_Command {
 	protected function execute(SymfonyConsole_InputInterface $input, SymfonyConsole_OutputInterface $output) {
 
 		// UPDATOR
-		$Config = new \Avanciro\Skel\Console\Config;
+		$Config = new \Avanciro\Skel\Console\Core\Config;
 		$Updator = new \Avanciro\Skel\Console\Updator;
 
 		// OUTPUT
