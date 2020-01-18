@@ -9,7 +9,7 @@ class Updator {
 
 
 	public function __construct() {
-		$this->file['local'] = json_decode(file_get_contents(dirname(dirname(__DIR__)).'/.skel.json'), true);
+		$this->file['local'] = json_decode(file_get_contents(dirname(dirname(dirname(__DIR__))).'/.skel.json'), true);
 	}
 
 
