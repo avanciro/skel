@@ -1,7 +1,7 @@
 {
     "name": "avanciro/skel",
     "description": "Skel - A Lightweight PHP framework.",
-    "version": "1.0.0-alpha",
+    "version": "2.0.0",
     "type": "project",
     "authors": [
         {
@@ -12,8 +12,8 @@
     ],
     "require": {
         "php": ">=7.0",
-        "symfony/routing": "^4.3",
-        "symfony/http-foundation": "^4.3",
+        "symfony/routing": "^5.0",
+        "symfony/http-foundation": "^5.0",
         "illuminate/database": "^6.0",
         "twig/twig": "^2.11"
     },
@@ -41,7 +41,8 @@
 	},
 	"scripts": {
 		"test": [ "./libs/bin/phpunit" ]
-	},
+    },
+    "minimum-stability": "dev",
     "license": "MIT",
     "homepage": "https://avanciro.com"
 }
