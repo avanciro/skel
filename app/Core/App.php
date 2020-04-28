@@ -30,7 +30,7 @@ class App {
          * other components of the framework. So we first
          * load Configuration manager
          */
-        $Registry->set('config', new Config($Registry));
+        $Registry->set('config', new Config);
 
 
         /**

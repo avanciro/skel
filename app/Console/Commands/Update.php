@@ -25,8 +25,8 @@ class Update extends SymfonyConsole_Command {
 	protected function execute(SymfonyConsole_InputInterface $input, SymfonyConsole_OutputInterface $output) {
 
 		// UPDATOR
-		$Config = new \Avanciro\Skel\Console\Config;
-		$Updator = new \Avanciro\Skel\Console\Updator;
+		$Config = new \Avanciro\Skel\Console\Core\Config;
+		$Updator = new \Avanciro\Skel\Console\Core\Updator;
 
 		// OUTPUT
 		$output->writeln("<info>[INFO]</info> Update process initialize.");
