@@ -14,7 +14,7 @@
         "php": ">=7.0",
         "symfony/routing": "^5.0",
         "symfony/http-foundation": "^5.0",
-        "illuminate/database": "^6.0",
+        "illuminate/database": "^7.9",
         "twig/twig": "^2.11"
     },
     "require-dev": {
