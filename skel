@@ -8,6 +8,9 @@ $Console->add(new Avanciro\Skel\Console\Commands\Version);
 $Console->add(new Avanciro\Skel\Console\Commands\Update);
 $Console->add(new Avanciro\Skel\Console\Commands\Backup\Database);
 
+// DATABASE
+$Console->add(new Avanciro\Skel\Console\Commands\Database\Seeder);
+
 // RUN
 $Console->run();
 
