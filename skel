@@ -10,6 +10,7 @@ $Console->add(new Avanciro\Skel\Console\Commands\Backup\Database);
 
 // DATABASE
 $Console->add(new Avanciro\Skel\Console\Commands\Database\Seeder);
+$Console->add(new Avanciro\Skel\Console\Commands\Database\Migration);
 
 // RUN
 $Console->run();
