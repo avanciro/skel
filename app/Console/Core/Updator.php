@@ -1,6 +1,6 @@
 <?php
 
-namespace Avanciro\Skel\Console;
+namespace Avanciro\Skel\Console\Core;
 
 class Updator {
 
