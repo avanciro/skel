@@ -10,7 +10,7 @@ use Avanciro\Skel\Core\Database;
  * new request. This will include
  */
 class App {
-    public function dispatch() {
+    public static function dispatch() {
 
         // REGISTRY
         $Registry = new Registry;
