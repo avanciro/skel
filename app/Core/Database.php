@@ -22,6 +22,7 @@ class Database {
             $Capsule->addConnection([
                 'driver'    => $dbConfig->connections[$dbConfig->default]['driver'],
                 'host'      => $dbConfig->connections[$dbConfig->default]['host'],
+                'port'      => $dbConfig->connections[$dbConfig->default]['port'],
                 'database'  => $dbConfig->connections[$dbConfig->default]['database'],
                 'username'  => $dbConfig->connections[$dbConfig->default]['username'],
                 'password'  => $dbConfig->connections[$dbConfig->default]['password'],
