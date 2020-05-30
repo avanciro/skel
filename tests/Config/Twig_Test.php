@@ -6,7 +6,7 @@ use PHPUnit\Framework\TestCase;
 use Avanciro\Skel\Core\Registry;
 use Avanciro\Skel\Core\Config;
 
-class Twig extends TestCase {
+class Twig_TestCase extends TestCase {
 
 	// PROPS
 	protected $config;
@@ -24,7 +24,6 @@ class Twig extends TestCase {
 
 	public function test_hasConfig() {
 		$this->assertIsObject($this->config->twig);
-
 	}
 
 }
