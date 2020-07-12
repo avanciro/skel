@@ -8,7 +8,7 @@
     "files": {
         "index.php": "39a7b1289c664dc77097218aba1aeb17af308ac9ebc52ac5c3bc50b912f11478",
         "app/Core/App.php": "a19f0a43658bbc3986ceea675e2293042c564823fc60eec1f94c887130e42a82",
-        "app/Core/Config.php": "747108d964c0bda89241add975d0e09d303cf34d284c2922a75e4db58631e9df",
+        "app/Core/Config.php": "bc3d2e4d60e13d480c76d3660ad5d7ff904c0cf9edd295c971b02bf03587aae4",
         "app/Core/Controller.php": "4dd1ef38c7b1b603b17554c37f588a332e9fc14fb68377ddeaaa5479b54a65f2",
         "app/Core/Database.php": "b0536adaee7ab5ed2a4af1970c57d9414c0f8ed3d307381a166f315beb979c30",
         "app/Core/Loader.php": "95d8de7ed3f4523ff84c5ca373c3af0baa5ec3bcb27e2ea95a67c0f8927e851f",
