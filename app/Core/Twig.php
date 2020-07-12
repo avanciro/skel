@@ -17,15 +17,16 @@ class Twig {
         $this->_registry = $Registry;
 
         /**
-         * We need to get the configuration for the
-         * twig engine.
+         * Get configuration data for the Twig Engine
+         * and Localization to load next components.
          */
-        $twigConfig = $this->_registry->config->twig;
+        $twig_config = $this->_registry->config->twig;
+        $localization_config = $this->_registry->config->localization;
 
         // TWIG FS LOADER
-        $TwigFSLoader = new Twig_FSLoader(dirname(dirname(__DIR__)).'/'.$twigConfig->directory);
+        $TwigFSLoader = new Twig_FSLoader(dirname(dirname(__DIR__)).'/'.$twig_config->directory);
 
-        if ( $twigConfig->debug === true ):
+        if ( $twig_config->debug === true ):
             $this->_registry->set('twig', new Twig_Environment($TwigFSLoader, array('debug' => true)));
             $this->_registry->twig->addExtension(new Twig_DebugExtension());
         else:
