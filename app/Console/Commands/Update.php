@@ -40,7 +40,7 @@ class Update extends SymfonyConsole_Command {
 		 */
 		$updates = false;
 		foreach ( $Updator->files() as $file => $checksum ):
-			if ( hash_file("sha512", dirname(dirname(dirname(__DIR__))).'/'.$file) !== $checksum ):
+			if ( hash_file("sha256", dirname(dirname(dirname(__DIR__))).'/'.$file) !== $checksum ):
 				$output->writeln("<info>[INFO]</info> UPDATE : ".$file);
 				$updates = true;
 			endif;
