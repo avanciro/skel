@@ -40,7 +40,7 @@ class Update extends SymfonyConsole_Command {
 		 */
 		$updates = false;
 		foreach ( $Updator->files() as $file => $checksum ):
-			if ( hash_file("sha512", dirname(dirname(dirname(__DIR__))).'/'.$file) !== $checksum ):
+			if ( hash_file("sha256", dirname(dirname(dirname(__DIR__))).'/'.$file) !== $checksum ):
 				$output->writeln("<info>[INFO]</info> UPDATE : ".$file);
 				$updates = true;
 			endif;
@@ -62,7 +62,7 @@ class Update extends SymfonyConsole_Command {
 		if ( $input->getOption('force') ):
 			$output->writeln("<info>[INFO]</info> Start downloading updates");
 			foreach ( $Updator->files() as $file => $checksum ):
-				if ( hash_file("sha512", dirname(dirname(dirname(__DIR__))).'/'.$file) !== $checksum ):
+				if ( hash_file("sha256", dirname(dirname(dirname(__DIR__))).'/'.$file) !== $checksum ):
 					file_put_contents(dirname(dirname(dirname(__DIR__))).'/'.$file, file_get_contents($Config->skel['update']['mirror'].$file));
 					$output->writeln("<info>[INFO]</info> UPDATING : ".$file);
 				endif;
