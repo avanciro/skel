@@ -52,7 +52,7 @@ class Twig {
                 return $Localization->query($file, $string);
 
             });
-            $this->_registry->twig->addFunction($func);
+            $this->_registry->twig->addFunction($func_localization);
         endif;
 
     }
