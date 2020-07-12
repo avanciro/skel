@@ -34,6 +34,16 @@ class App {
 
 
         /**
+         * We need to configure the default localization cookie
+         * for the user if we have localization capability enabled
+         * in the configuration. This can be done using cookie validation
+         * method
+         */
+        $Localization = new Localization;
+        $Localization->is_cookie();
+
+
+         /**
          * Framework need to load Eloquent ORM to the
          * system and also need to oot Eloquent in order
          * to use in it models

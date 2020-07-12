@@ -75,6 +75,18 @@ class Localization {
         endif;
     }
 
+
+
+    /**
+     * Set the default locale configuration if the language cookie
+     * is not present in the user's cookies.
+     */
+    public function is_cookie() {
+        if ( $this->config->enable AND !isset($_COOKIE['lang']) ):
+            setcookie('lang', $this->config->language['default'], time()+(86400*10000));
+        endif;
+    }
+
 }
 
 ?>
