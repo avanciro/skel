@@ -17,6 +17,6 @@
         "app/Core/Request.php": "19fb12c7f8e41b2d72663905b5fe7424f99d53d0d549ef02455048dbdb5ccd09",
         "app/Core/Route.php": "e4b955d42780919db0ded36714ad6e95c8683c7e0cd232b832e6c07fb8649498",
         "app/Core/Session.php": "469626eb21bc9e1c78e2981ee4074d6fa842835af6d2ec145211ee2d597a4bcc",
-        "app/Core/Twig.php": "43b841df4e9d9ea6a3beb718f25ff52d6eb2e3a8ffb46001e085fef7738f703b"
+        "app/Core/Twig.php": "fd4c1e8678fe5a7a3d5e2b5fda619bca2de7c44c929f5a1ac53147ddaefc75a6"
     }
 }
