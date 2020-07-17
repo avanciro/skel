@@ -15,7 +15,7 @@ class Updator {
 
 
 	public function files() {
-		return json_decode(file_get_contents($this->file['local']['skel']['update']['mirror'].'.skel.json'), true)['files'];
+		return json_decode(file_get_contents($this->file['local']['skel']['update']['mirror'].'.skel.json?v='.time()), true)['files'];
 	}
 
 
