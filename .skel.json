@@ -12,7 +12,7 @@
         "app/Core/Controller.php": "d96eec4619eecce1a33021ea43044667bca40332a6065e5dde438b6267c5633a",
         "app/Core/Database.php": "b0536adaee7ab5ed2a4af1970c57d9414c0f8ed3d307381a166f315beb979c30",
         "app/Core/Loader.php": "95d8de7ed3f4523ff84c5ca373c3af0baa5ec3bcb27e2ea95a67c0f8927e851f",
-        "app/Core/Localization.php": "13f7e76852636767eb29c0e7c17a281691e226157817e252d0c3bf24133716ed",
+        "app/Core/Localization.php": "784c1c7ae1313e9adb12b14cef8d09b19622e2753c76d992633642ade0f8406a",
         "app/Core/Registry.php": "0f01fda3f56529b1279000988387274f4c3a1be29412f15d941399178e526fad",
         "app/Core/Request.php": "19fb12c7f8e41b2d72663905b5fe7424f99d53d0d549ef02455048dbdb5ccd09",
         "app/Core/Route.php": "e4b955d42780919db0ded36714ad6e95c8683c7e0cd232b832e6c07fb8649498",
