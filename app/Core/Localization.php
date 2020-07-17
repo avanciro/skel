@@ -83,7 +83,7 @@ class Localization {
      */
     public function is_cookie() {
         if ( $this->config->enable AND !isset($_COOKIE['lang']) ):
-			setcookie('lang', $this->config->language['default'], time()+(86400*10000));
+			setcookie('lang', $this->config->language['default'], time()+(86400*10000), "/", ".".$_SERVER['HTTP_HOST'], 0);
 		endif;
     }
 
