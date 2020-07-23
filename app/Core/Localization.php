@@ -27,8 +27,8 @@ class Localization {
                  * Seems like we have localization file that defined in
                  * language cookie.
                  */
-                if ( array_key_exists($string, $this->file($file)) ):
-                    return $this->file($file)[$string];
+                if ( array_key_exists($string, $this->file($_COOKIE['lang'], $file)) ):
+                    return $this->file($_COOKIE['lang'], $file)[$string];
                 else:
                     return false;
                 endif;
@@ -40,8 +40,8 @@ class Localization {
                  * on the language store. We need to return default language
                  * file string in that case if exists.
                  */
-                if ( array_key_exists($string, $this->file($file)) ):
-                    return $this->file($file)[$string];
+                if ( array_key_exists($string, $this->file($this->config->language['default'], $file)) ):
+                    return $this->file($this->config->language['default'], $file)[$string];
                 else:
                     return false;
                 endif;
@@ -66,11 +66,11 @@ class Localization {
      * and keep it in the memory until we take all the strings
      * out of it when needed.
      */
-    public function file($file) {
+    public function file($lang, $file) {
         if ( array_key_exists($file, $this->store) ):
             return $this->store[$file];
         else:
-            $this->store[$file] = include dirname(dirname(__DIR__)).'/'.$this->config->directory.'/'.$this->config->language['default'].'/'.$file.'.php';
+            $this->store[$file] = include dirname(dirname(__DIR__)).'/'.$this->config->directory.'/'.$lang.'/'.$file.'.php';
             return $this->store[$file];
         endif;
     }
@@ -82,9 +82,9 @@ class Localization {
      * is not present in the user's cookies.
      */
     public function is_cookie() {
-        if ( $this->config->enable AND !isset($_COOKIE['lang']) ):
-            setcookie('lang', $this->config->language['default'], time()+(86400*10000));
-        endif;
+		if ( $this->config->enable AND !isset($_COOKIE['lang']) ):
+			setcookie('lang', $this->config->language['default'], time()+(86400*10000), "/", $_SERVER['HTTP_HOST'], 0);
+		endif;
     }
 
 }
